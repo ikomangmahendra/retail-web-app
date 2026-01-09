@@ -19,7 +19,7 @@ public class RetailApplication {
     @Bean
     public CommandLineRunner init(ProductRepository productRepository) {
         return args -> {
-            // productRepository.deleteAll();
+            productRepository.deleteAll();
 
             Product smartphone = new Product();
             smartphone.setName("iPhone Pro Max");
